@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4f81;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 25px;
+      font-size: 1.2rem;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Landing -->
+  <section>
+    <h1>Hey love ❤️</h1>
+    <p>
+      This little page exists because of you.<br>
+      Distance couldn’t stop me from celebrating us.
+    </p>
+    <button onclick="showHug()">Tap if you miss me 🤍</button>
+    <div id="hug" class="hidden">
+      🤗  
+      <br>
+      Imagine my arms around you.  
+      <br>
+      This hug lasts as long as you need.
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section>
+    <h2>Us, so far 💕</h2>
+    <p>
+      We met in a world where miles mattered more than time zones.<br>
+      Even when I can’t hold your hand,<br>
+      I still choose you — every single day.
+    </p>
+  </section>
+
+  <!-- Letter -->
+  <section>
+    <h2>A Letter for You 💌</h2>
+    <p>
+      Dear my love,<br><br>
+      Some people celebrate Valentine’s Day with flowers and dinners.<br>
+      I celebrate it by choosing you — even from far away.<br><br>
+      Thank you for being patient with the distance,<br>
+      gentle with my flaws,<br>
+      and strong when things get hard.<br><br>
+      One day, this distance will just be a story we laugh about.<br>
+      Until then, my heart is already with you.<br><br>
+      Happy Valentine’s Day ❤️
+    </p>
+  </section>
+
+  <!-- Promise -->
+  <section>
+    <h2>One Promise 🌙</h2>
+    <p>
+      No matter how far we are tonight,<br>
+      you’re my Valentine — and my future.
+    </p>
+  </section>
+
+  <footer>
+    Made with love by someone who misses you a lot 💖
+  </footer>
+
+  <script>
+    function showHug() {
+      document.getElementById("hug").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
